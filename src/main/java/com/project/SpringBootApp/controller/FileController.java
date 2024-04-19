@@ -27,7 +27,7 @@ public class FileController {
         // String filePath=System.getProperty("user.dir")+ File.separator+multipartFile.getOriginalFilename();
         // path->/home/admin1/Documents/Project/SpringBootApp/file_name
 
-        final String UPLOAD_DIRECTORY = "/home/admin1/Downloads"; //it will upload in downloads folder
+        final String UPLOAD_DIRECTORY = "/home/admin1/Downloads"; //it will upload from downloads folder
         String filePath=UPLOAD_DIRECTORY+ File.separator+multipartFile.getOriginalFilename();
         try{
             FileOutputStream fileOutputStream=new FileOutputStream(filePath);
